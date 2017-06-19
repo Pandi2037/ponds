@@ -1,0 +1,65 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository/>
+  <interactiveMode/>
+  <usePluginRegistry/>
+  <offline/>
+  <pluginGroups/>
+  <servers>
+ 
+  </servers>
+  <mirrors/>
+
+
+  <profiles>
+    <profile>
+      <id>bnym</id>
+
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <repositories>
+       <repository>
+        <id>public</id>
+        <url>http://nexus.bnymellon.net/nexus/content/groups/public/</url>
+        <releases>
+        <enabled>true</enabled>
+        </releases>
+       </repository>
+
+       <repository>
+        <id>BNYM Releases</id>
+        <url>http://nexus.bnymellon.net/nexus/content/groups/bnym-releases/</url>
+        <releases>
+        <enabled>true</enabled>
+        </releases>
+       </repository>
+      
+     </repositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles/>
+<proxies>
+<proxy>
+<id>h</id>
+<active>true</active>
+<protocol>http</protocol>
+<host>proxy.pershing.com</host>
+<port>8080</port>
+<nonProxyHosts>localhost</nonProxyHosts>
+</proxy>
+<proxy>
+<id>hs</id>
+<active>true</active>
+<protocol>https</protocol>
+<host>proxy.pershing.com</host>
+<port>8080</port>
+<nonProxyHosts>localhost</nonProxyHosts>
+</proxy>
+</proxies>
+
+</settings>
